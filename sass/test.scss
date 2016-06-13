@@ -1,0 +1,48 @@
+$blue:	#FFFED5;
+$red: #FF2620;
+$height: 20px;
+$width: 70px;
+
+body {
+	background: $blue;
+	color: $red;
+}
+
+.outer {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	li {
+		border: blue;
+		display: inline-block;
+		width: $width;
+		height: $height;
+	}
+
+	a {
+		color: $blue;
+	}
+
+	img {
+		filter: invert(1);
+		transform: translate(0, -100%);
+	}
+
+	.watch-test {
+		transform: translate(0, -100%);
+		filter: invert(1);
+	}
+
+	.watch-test-1 {
+		transform: translate(0, -100%);
+		filter: invert(1);
+	}
+
+	.watch-test-2 {
+		transform: translate(0, -100%);
+		filter: invert(1);
+	}
+}
