@@ -1,0 +1,16 @@
+body {
+  background: #45C871;
+  color: #FFF9A7;
+  font-size: 20px; }
+
+.register {
+  margin-top: 240px; }
+  .register label {
+    margin-bottom: 8px; }
+  .register span {
+    height: 30px; }
+  .register input {
+    border-radius: 5px;
+    border: none;
+    color: #575233;
+    height: 30px; }

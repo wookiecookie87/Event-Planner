@@ -15,23 +15,3 @@ body {
 
 .outer a {
   color: #FFFED5; }
-
-.outer img {
-  -webkit-filter: invert(1);
-          filter: invert(1);
-  transform: translate(0, -100%); }
-
-.outer .watch-test {
-  transform: translate(0, -100%);
-  -webkit-filter: invert(1);
-          filter: invert(1); }
-
-.outer .watch-test-1 {
-  transform: translate(0, -100%);
-  -webkit-filter: invert(1);
-          filter: invert(1); }
-
-.outer .watch-test-2 {
-  transform: translate(0, -100%);
-  -webkit-filter: invert(1);
-          filter: invert(1); }

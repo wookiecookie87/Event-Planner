@@ -1,0 +1,29 @@
+$main-color: #45C871;
+$sub-color: #FFF9A7;
+
+
+
+body {
+	background: $main-color;
+	color: $sub-color;
+	font-size: 20px;
+}
+
+.register {
+    margin-top: 240px;
+	
+	label {
+		margin-bottom: 8px;
+	}
+
+	span {
+		height: 30px;
+	}
+
+    input {
+    	border-radius: 5px;
+    	border: none;
+    	color: #575233;
+    	height: 30px;
+    }
+}
