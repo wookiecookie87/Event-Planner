@@ -1,0 +1,59 @@
+<div class="col-xs-12" ng-controller="eventControl as eventCtrl">
+	<div class="col-xs-6 make-event">
+		<label for="event-title" class="col-xs-12">
+			<div class="col-xs-9"><input type="text" class="col-xs-12" id="event-title" placeholder="Event Title"></div>
+			<span class="col-xs-3"></span>
+		</label>
+		<label for="event-type" class="col-xs-12">
+			<div class="col-xs-9">
+				<input list="event-type" placeholder="Event Type">
+				<datalist id="event-type">
+					<option value="Birthday Event">Birthday Event</option>
+					<option value="Sports Event">Sports Event</option>
+					<option value="Academic Event">Academic Event</option>
+					<option value="Family Event">Family Event</option>
+				</datalist>
+			</div>
+			<span class="col-xs-3"></span>
+		</label>
+		<label for="event-type" class="col-xs-12">
+			<div class="col-xs-9"><input type="text" class="col-xs-12"></div>
+			<span class="col-xs-3"></span>
+		</label>
+		<label for="" class="col-xs-12">
+			<div class="col-xs-9"><input type="text" class="col-xs-12"></div>
+			<span class="col-xs-3"></span>
+		</label>
+		<label for="" class="col-xs-12">
+			<div class="col-xs-9"><input type="text" class="col-xs-12"></div>
+			<span class="col-xs-3"></span>
+		</label>
+		<label for="" class="col-xs-12">
+			<div class="col-xs-9"><input type="text" class="col-xs-12"></div>
+			<span class="col-xs-3"></span>
+		</label>
+		<label for="" class="col-xs-12">
+			<div class="col-xs-9"><input type="text" class="col-xs-12"></div>
+			<span class="col-xs-3"></span>
+		</label>
+		<label for="" class="col-xs-12">
+			<div class="col-xs-9"><input type="text" class="col-xs-12"></div>
+			<span class="col-xs-3"></span>
+		</label>
+
+
+	</div>
+	<div class="col-xs-6 show-event">
+		<div class="col-xs-4" ng-repeat="event in eventCtrl.event">
+				<div>{{event.name}}</div>
+				<div>{{event.type}}</div>
+				<div>{{event.host}}</div>
+				<div>{{event.start}}</div>
+				<div>{{event.end}}</div>
+				<span ng-repeat="guest in event.guests">{{guest}}</span>
+				
+				<div>{{event.location}}</div>
+				<div>{{event.message}}</div>
+		</div>
+	</div>
+</div>

@@ -3,6 +3,9 @@ body {
   color: #FFF9A7;
   font-size: 20px; }
 
+.no-padding {
+  padding: 0; }
+
 .register {
   margin-top: 240px; }
   .register label {
@@ -14,3 +17,17 @@ body {
     border: none;
     color: #575233;
     height: 30px; }
+  .register button {
+    background: #5690EB;
+    color: #fff;
+    width: 150px;
+    float: right;
+    margin-top: 10px; }
+  .register ul {
+    padding: 0;
+    margin: 0; }
+    .register ul li {
+      list-style-type: none;
+      line-height: 20px;
+      color: #8E361E;
+      height: 45px; }

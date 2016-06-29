@@ -9,6 +9,10 @@ body {
 	font-size: 20px;
 }
 
+.no-padding {
+	padding: 0;
+}
+
 .register {
     margin-top: 240px;
 	
@@ -26,4 +30,24 @@ body {
     	color: #575233;
     	height: 30px;
     }
+
+	button {
+		background: #5690EB;
+		color: #fff;
+		width: 150px;
+		float: right;
+		margin-top: 10px;
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+
+		li {
+			list-style-type: none;
+			line-height: 20px;
+			color: #8E361E;
+			height: 45px;
+		}
+	}
 }
