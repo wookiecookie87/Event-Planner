@@ -1,17 +1,23 @@
 body {
-  background: #45C871;
-  color: #FFF9A7;
-  font-size: 20px; }
+  background: #D9CFE8;
+  color: #9A906E;
+  font-size: 17px; }
 
 .no-padding {
   padding: 0; }
 
 .register {
-  margin-top: 240px; }
+  margin-top: 100px; }
   .register label {
     margin-bottom: 8px; }
   .register span {
-    height: 30px; }
+    height: 30px;
+    font-size: 15px;
+    padding-top: 5px; }
+  .register .error {
+    font-size: 13px;
+    color: #dc7053;
+    height: 20px; }
   .register input {
     border-radius: 5px;
     border: none;
@@ -28,6 +34,34 @@ body {
     margin: 0; }
     .register ul li {
       list-style-type: none;
-      line-height: 20px;
-      color: #8E361E;
+      line-height: 14px;
+      color: #dc7053;
       height: 45px; }
+
+.make-event {
+  margin-top: 10px; }
+  .make-event label {
+    margin-bottom: 8px; }
+  .make-event span {
+    height: 30px; }
+  .make-event input {
+    border-radius: 5px;
+    border: none;
+    color: #575233;
+    height: 30px; }
+  .make-event button {
+    background: #5690EB;
+    color: #fff;
+    width: 150px;
+    float: right;
+    margin-top: 10px; }
+
+.show-event {
+  margin-top: 10px; }
+  .show-event .event-card {
+    background: #fddbdb;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px; }
+    .show-event .event-card .guests {
+      margin-right: 10px; }

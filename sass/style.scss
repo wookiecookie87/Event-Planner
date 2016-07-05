@@ -1,12 +1,13 @@
-$main-color: #45C871;
-$sub-color: #FFF9A7;
+$main-color: #D9CFE8;
+$sub-color: #9A906E;
+$error-color: #dc7053;
 
 
 
 body {
 	background: $main-color;
 	color: $sub-color;
-	font-size: 20px;
+	font-size: 17px;
 }
 
 .no-padding {
@@ -14,7 +15,54 @@ body {
 }
 
 .register {
-    margin-top: 240px;
+    margin-top: 100px;
+	
+	label {
+		margin-bottom: 8px;
+	}
+
+	span {
+		height: 30px;
+		font-size: 15px;
+		padding-top: 5px;
+	}
+
+	.error {
+		font-size: 13px;
+		color: $error-color;
+		height: 20px;
+	}
+
+    input {
+    	border-radius: 5px;
+    	border: none;
+    	color: #575233;
+    	height: 30px;
+    }
+
+	button {
+		background: #5690EB;
+		color: #fff;
+		width: 150px;
+		float: right;
+		margin-top: 10px;
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+
+		li {
+			list-style-type: none;
+			line-height: 14px;
+			color: $error-color;
+			height: 45px;
+		}
+	}
+}
+
+.make-event {
+    margin-top: 10px;
 	
 	label {
 		margin-bottom: 8px;
@@ -39,15 +87,19 @@ body {
 		margin-top: 10px;
 	}
 
-	ul {
-		padding: 0;
-		margin: 0;
+}
 
-		li {
-			list-style-type: none;
-			line-height: 20px;
-			color: #8E361E;
-			height: 45px;
+.show-event {
+	margin-top: 10px;
+
+	.event-card {
+		background: #fddbdb;
+		border-radius: 5px;
+		padding: 10px;
+		margin-bottom: 10px;
+
+		.guests {
+			margin-right: 10px;
 		}
 	}
 }

@@ -8,9 +8,9 @@ angular.module("EventPlanner")
 		.controller("eventControl", [function(){
 			var self = this;
 
-			self.event = [
+			self.events = [
 				{name : "Jon's Birthday",
-				type : "Birthday Party",
+				type : "Birthday Event",
 				host : "Jon Park",
 				start : "2016-03-13 18:00",
 				end : "2016-03-14 06:00",
@@ -35,6 +35,22 @@ angular.module("EventPlanner")
 				guests : ["Luigi", "Johnny", "deven"],
 				location : "Fordham Unviersity Rose Hill",
 				message : "Congrats"
-				}
+				}	
 			];
+
+			self.createEvent = function(){
+				//alert("!23123123");
+				var guests = self.event.guests;
+				var guest_arr = guests.split(",");
+				var guest = [];
+				guest_arr.forEach(function(guests){
+					alert(guests);
+					guest.push(guests.trim());
+				});
+
+
+				self.event.guests = guest;
+
+				self.events.push(self.event);
+			};
 		}]);
