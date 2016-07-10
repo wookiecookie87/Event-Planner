@@ -1,4 +1,4 @@
-angular.module("EventPlanner", ["ngRoute", "ui.bootstrap"])
+angular.module("EventPlanner", ["ngRoute"])
 	.config(["$routeProvider", function($routeProvider){
 		$routeProvider.when("/", {
 			templateUrl: "template/register.html"
