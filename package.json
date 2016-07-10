@@ -1,0 +1,25 @@
+{
+  "name": "event-planner",
+  "version": "1.0.0",
+  "description": "Nanodegree",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wookiecookie87/Event-Planner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wookiecookie87/Event-Planner/issues"
+  },
+  "homepage": "https://github.com/wookiecookie87/Event-Planner#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
