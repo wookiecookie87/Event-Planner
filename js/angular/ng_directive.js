@@ -9,18 +9,21 @@ angular.module("EventPlanner")
 
 					if(!viewValue || !comparisonModel){
 					// It's valid because we have nothing to compare against
-						ctrl.$setValidity("lowerThan", true);
-					}
-					if (comparisonModel) {
-						var to = comparisonModel.split("T");
-						t = new Date(to[0]+" "+to[1]); //new Date(to);
-					}
-					if (viewValue) {
-						var from = viewValue.split("T");
-						f = new Date(from[0]+" "+from[1]);//new Date(from);
-					}
 
-					ctrl.$setValidity("lowerThan", Date.parse(t) > Date.parse(f));
+						console.log("true!!!!1");
+						ctrl.$setValidity("lowerThan", true);
+					}else {
+						if (comparisonModel) {
+							var to = comparisonModel.split("T");
+							t = new Date(to[0]+" "+to[1]); //new Date(to);
+						}
+						if (viewValue) {
+							var from = viewValue.split("T");
+							f = new Date(from[0]+" "+from[1]);//new Date(from);
+						}
+
+						ctrl.$setValidity("lowerThan", Date.parse(t) > Date.parse(f));
+					}
 			// It's valid if model is lower than the model we're comparing against
 					return viewValue;
 				};

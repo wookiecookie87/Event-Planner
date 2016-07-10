@@ -3,12 +3,12 @@
 		<form ng-submit="regi.submit()" name="regiForm" class="register col-xs-12">
 			<label class="col-xs-12" for="name">
 				<span class="col-xs-5 col-sm-5 col-md-2 col-lg-2">Name</span>
-				<input ng-model="regi.username" class="col-xs-7 col-sm-7 col-md-5 col-lg-5" type="text" id="name" name="name" required>
+				<input ng-model="regi.username" class="col-xs-7 col-sm-7 col-md-5 col-lg-5" type="text" id="name" name="name" required autofocus autocomplete="name">
 				<span class="error col-xs-12 col-sm-12 col-md-5 col-lg-5" ng-show="regiForm.name.$error.required">This field is required</span>
 			</label>
 			<label class="col-xs-12" for="email">
 				<span class="col-xs-5 col-sm-5 col-md-2 col-lg-2">Email</span>
-				<input ng-model="regi.email" class="col-xs-7 col-sm-7 col-md-5 col-lg-5" type="email" id="email" name="email" required>
+				<input ng-model="regi.email" class="col-xs-7 col-sm-7 col-md-5 col-lg-5" type="email" id="email" name="email" required autocomplete="email">
 				<span class="error col-xs-12 col-lg-5" ng-show="regiForm.email.$error.required">This field is required</span>
 				<span class="error col-xs-12 col-sm-12 col-md-5 col-lg-5" ng-show="regiForm.email.$invalid && regiForm.email.$dirty">Email format is wrong</span>
 			</label>
