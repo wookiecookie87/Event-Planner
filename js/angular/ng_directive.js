@@ -9,8 +9,6 @@ angular.module("EventPlanner")
 
 					if(!viewValue || !comparisonModel){
 					// It's valid because we have nothing to compare against
-
-						console.log("true!!!!1");
 						ctrl.$setValidity("lowerThan", true);
 					}else {
 						if (comparisonModel) {

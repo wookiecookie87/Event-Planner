@@ -62,7 +62,6 @@ angular.module("EventPlanner")
 			function setDateFormat(date){
 				var ISOdate = date.toISOString();
 				var date_arr = ISOdate.replace("T", " ").split(".");
-				console.log(date_arr);
 				return date_arr[0].slice(0, -3);
 
 			}
