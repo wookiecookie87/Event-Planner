@@ -80,6 +80,10 @@ body {
     	height: 30px;
     }
 
+    input::-webkit-calendar-picker-indicator {
+              opacity: 100;
+           }
+
 	button {
 		background: #5690EB;
 		color: #fff;
