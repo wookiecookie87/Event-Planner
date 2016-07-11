@@ -29,10 +29,11 @@ body {
     width: 150px;
     float: right;
     margin-top: 10px; }
-  .register ul {
+  .register ul.error {
     padding: 0;
-    margin: 0; }
-    .register ul li {
+    margin: 0;
+    height: 64px; }
+    .register ul.error li {
       list-style-type: none;
       line-height: 14px;
       color: #dc7053;

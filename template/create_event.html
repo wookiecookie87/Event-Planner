@@ -15,10 +15,10 @@
 				
 				<input class="col-xs-12" list="event-type" name="event-type" id="event-type" ng-model="eventCtrl.event.type" placeholder="Event Type" required>
 				<datalist id="event-type">
-					<option value="Birthday Event">Birthday Event</option>
-					<option value="Sports Event">Sports Event</option>
-					<option value="Academic Event">Academic Event</option>
-					<option value="Family Event">Family Event</option>
+					<option value="Birthday Event">
+					<option value="Sports Event">
+					<option value="Academic Event">
+					<option value="Family Event">
 				</datalist>
 			</div>
 			<span class="col-xs-12 col-sm-12 col-md-3 col-lg-3" ng-show="eventForm.event-type.$error.required">This field is required</span>
@@ -60,7 +60,7 @@
 		<label for="message" class="col-xs-12 no-padding">
 			<div class="col-xs-12 col-sm-12 col-md-3 col-md-3 no-padding">Message</div>
 			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 no-padding">
-				<textarea type="text" name="event-message" id="message" class="col-xs-12" ng-model="eventCtrl.event.message" required placeholder="Message ex) Be on time!! ">
+				<textarea type="text" name="event-message" id="message" class="col-xs-12" ng-model="eventCtrl.event.message"  placeholder="Message ex) Be on time!! ">
 					
 				</textarea>
 			</div>

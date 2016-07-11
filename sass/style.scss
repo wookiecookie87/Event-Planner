@@ -48,9 +48,10 @@ body {
 		margin-top: 10px;
 	}
 
-	ul {
+	ul.error {
 		padding: 0;
 		margin: 0;
+		height: 64px;
 
 		li {
 			list-style-type: none;

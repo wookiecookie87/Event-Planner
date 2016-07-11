@@ -4,23 +4,24 @@
 			<label class="col-xs-12" for="name">
 				<span class="col-xs-5 col-sm-5 col-md-2 col-lg-2">Name</span>
 				<input ng-model="regi.username" class="col-xs-7 col-sm-7 col-md-5 col-lg-5" type="text" id="name" name="name" required autofocus autocomplete="name">
-				<span class="error col-xs-12 col-sm-12 col-md-5 col-lg-5" ng-show="regiForm.name.$error.required">This field is required</span>
+				<span class="error col-xs-12 col-sm-12 col-md-5 col-lg-5" ng-show="regiForm.name.$error.required && regiForm.name.$dirty || regiForm.name.$error.required && regiForm.email.$dirty || regiForm.name.$error.required && regiForm.password.$dirty">This field is required</span>
 			</label>
 			<label class="col-xs-12" for="email">
 				<span class="col-xs-5 col-sm-5 col-md-2 col-lg-2">Email</span>
 				<input ng-model="regi.email" class="col-xs-7 col-sm-7 col-md-5 col-lg-5" type="email" id="email" name="email" required autocomplete="email">
-				<span class="error col-xs-12 col-lg-5" ng-show="regiForm.email.$error.required">This field is required</span>
-				<span class="error col-xs-12 col-sm-12 col-md-5 col-lg-5" ng-show="regiForm.email.$invalid && regiForm.email.$dirty">Email format is wrong</span>
+				<span class="error col-xs-12 col-lg-5" ng-show="regiForm.email.$error.required && regiForm.email.$dirty || regiForm.email.$error.required && regiForm.password.$dirty">This field is required</span>
+				<span class="error col-xs-12 col-sm-12 col-md-5 col-lg-5" ng-show="regiForm.email.$invalid && regiForm.email.$dirty ">Email format is wrong</span>
 			</label>
-			<label class="col-xs-12" for="birthday">
-				<span class="col-xs-5 col-sm-5 col-md-2 col-lg-2">Birthday</span>
-				<input ng-model="regi.birthday" class="col-xs-7 col-sm-7 col-md-5 col-lg-5"  type="date" id="birthday">
-			</label>
+			
 			<label class="col-xs-12" for="password">
 				<span class="col-xs-5 col-sm-5 col-md-2 col-lg-2">Password</span>
 				<input ng-model="regi.password" class="col-xs-7 col-sm-7 col-md-5 col-lg-5" type="password" id="password" name="password"
 				ng-pattern="/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/" ng-minlength="6" ng-maxlength="16" required>
 				
+			</label>
+			<label class="col-xs-12" for="birthday">
+				<span class="col-xs-5 col-sm-5 col-md-2 col-lg-2">Birthday</span>
+				<input ng-model="regi.birthday" class="col-xs-7 col-sm-7 col-md-5 col-lg-5"  type="date" id="birthday">
 			</label>
 			<ul class="error col-xs-12 col-sm-12 col-md-7 col-lg-7">
 				<li class="col-xs-12" ng-show="regiForm.password.$error.pattern">Must contain one lower &amp; uppercase letter, and one non-alpha character <br/>(a number or a symbol.)</li>

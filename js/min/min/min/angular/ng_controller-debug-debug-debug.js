@@ -63,5 +63,6 @@ angular.module("EventPlanner")
 				var ISOdate = date.toISOString();
 				var date_arr = ISOdate.replace("T", " ").split(".");
 				return date_arr[0].slice(0, -3);
+
 			}
 		}]);
