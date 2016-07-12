@@ -95,6 +95,9 @@ body {
 	.warn {
 		font-size: 12px;
 		color: $error-color;
+		text-align: right;
+	    height: 5px;
+    	margin-top: 6px;
 	}
 
 }

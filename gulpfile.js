@@ -52,7 +52,7 @@ gulp.task("minify", function(){
 			exclude: ["tasks"],
 			ignoreFiles: [".combo.js", "-min.js"]
 		}))
-		.pipe(gulp.dest("./js/min"));
+		.pipe(gulp.dest("./min.js"));
 
 });
 

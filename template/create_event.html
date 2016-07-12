@@ -5,15 +5,15 @@
 		<label for="event-title" class="col-xs-12 no-padding">
 			<div class="col-xs-12 col-sm-12 col-md-3 col-md-3 no-padding">Event Title</div>
 			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 no-padding">
-				<input type="text" class="col-xs-12" name="event-title" ng-model="eventCtrl.event.name" id="event-title"  placeholder="Event Title" required autofocus>
+				<input ng-model="eventCtrl.event.name" type="text" class="col-xs-12" name="title"  id="title"  placeholder="Event Title" required autofocus>
 			</div>
-			<span class="error col-xs-12" ng-show="eventForm.event-title.$error.required">This field is required</span>
+			<span class="warn col-xs-12" ng-show="eventForm.title.$error.required">This field is required</span>
 		</label>
 		<label for="event-type" class="col-xs-12 no-padding">
 			<div class="col-xs-12 col-sm-12 col-md-3 col-md-3 no-padding">Event Type</div>
 			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 no-padding">
 				
-				<input class="col-xs-12" list="event-type" name="event-type"  ng-model="eventCtrl.event.type" placeholder="Event Type" >
+				<input  ng-model="eventCtrl.event.type" class="col-xs-12" list="type" name="type"  placeholder="Event Type" required >
 				<datalist id="event-type">
 					<option value="Birthday Event">
 					<option value="Sports Event">
@@ -21,26 +21,29 @@
 					<option value="Family Event">
 				</datalist>
 			</div>
-			<span class="col-xs-12 col-sm-12 col-md-3 col-lg-3" ng-show="eventForm.event-type.$error.required">This field is required</span>
+			<span class="warn col-xs-12" ng-show="eventForm.type.$error.required">This field is required</span>
 		</label>
 		<label for="event-host" class="col-xs-12 no-padding">
 			<div class="col-xs-12 col-sm-12 col-md-3 col-md-3 no-padding">Host Name</div>
 			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 no-padding">
-				<input type="text" name="event-host" id="event-host" ng-model="eventCtrl.event.host" class="col-xs-12" placeholder="Host Name" required autocomplete="name">
+				<input type="text" name="host" id="host" ng-model="eventCtrl.event.host" class="col-xs-12" placeholder="Host Name" required autocomplete="name">
 			</div>
+			<span class="warn col-xs-12" ng-show="eventForm.host.$error.required">This field is required</span>
 		</label>
 		<label for="start" class="col-xs-12 no-padding">
 			<span class="col-xs-12 col-sm-12 col-md-3 col-md-3 no-padding">Start</span>
 			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 no-padding">
-				<input type="datetime-local" name="start" id="start" class="col-xs-12" name="event-start" ng-model="eventCtrl.event.start" lower-than="{{eventCtrl.event.end}}" required/>
+				<input type="datetime-local" name="start" id="start" class="col-xs-12" ng-model="eventCtrl.event.start" lower-than="{{eventCtrl.event.end}}" required/>
    			 </div>
+   			 <span class="warn col-xs-12" ng-show="eventForm.start.$error.required">This field is required</span>
 			<span class="warn col-xs-12" ng-show="eventForm.start.$error.lowerThan">Start time cannot be later than End time</span>
 		</label>
 		<label for="end" class="col-xs-12 no-padding">
 			<span class="col-xs-12 col-sm-12 col-md-3 col-md-3 no-padding">End</span>
 			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 no-padding"> 
-				<input type="datetime-local" name="end" id="end" class="col-xs-12" name="event-end" ng-model="eventCtrl.event.end" higher-than="{{eventCtrl.event.start}}" required/>
+				<input type="datetime-local" name="end" id="end" class="col-xs-12" ng-model="eventCtrl.event.end" higher-than="{{eventCtrl.event.start}}" required/>
     		</div>
+    		<span class="warn col-xs-12" ng-show="eventForm.end.$error.required">This field is required</span>
 			<span class="warn col-xs-12" ng-show="eventForm.end.$error.higherThan">End time cannot be earlier than start time</span>
 		</label>
 		<label for="guests" class="col-xs-12 no-padding">
@@ -53,9 +56,9 @@
 		<label for="location" class="col-xs-12 no-padding">
 			<div class="col-xs-12 col-sm-12 col-md-3 col-md-3 no-padding">Location</div>
 			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 no-padding">
-				<input type="text" name="event-location" id="location" class="col-xs-12" ng-model="eventCtrl.event.location" required placeholder="Location">
+				<input type="text" name="location" id="location" class="col-xs-12" ng-model="eventCtrl.event.location" required placeholder="Location">
 			</div>
-			<span class="col-xs-12 col-sm-12 col-md-3 col-lg-3" ng-show="eventForm.event-location.$error.required">This field is required</span>
+			<span class="warn col-xs-12" ng-show="eventForm.location.$error.required">This field is required</span>
 		</label>
 		<label for="message" class="col-xs-12 no-padding">
 			<div class="col-xs-12 col-sm-12 col-md-3 col-md-3 no-padding">Message</div>
@@ -64,7 +67,7 @@
 					
 				</textarea>
 			</div>
-			<span class="col-xs-12 col-sm-12 col-md-3 col-lg-3" ng-show="eventForm.event-message.$error.required">This field is required</span>
+			
 		</label>
 		<div class="col-xs-7 no-padding no-padding">
 			<button type="submit" ng-disabled="eventForm.$invalid"  class="btn">Submit</button>
