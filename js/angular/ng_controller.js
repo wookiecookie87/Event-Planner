@@ -44,9 +44,9 @@ angular.module("EventPlanner")
 				if(guests){
 					var guest_arr = guests.split(",");
 					var guest = [];
-					guest_arr.forEach(function(guests){
-						alert(guests);
-						guest.push(guests.trim());
+					//console.log(guest_arr);
+					guest_arr.forEach(function(guestss){
+						guest.push(guestss.trim());
 					});
 				}
 
