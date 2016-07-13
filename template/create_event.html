@@ -9,12 +9,12 @@
 			</div>
 			<span class="warn col-xs-12" ng-show="eventForm.title.$error.required">This field is required</span>
 		</label>
-		<label for="event-type" class="col-xs-12 no-padding">
+		<label for="type" class="col-xs-12 no-padding">
 			<div class="col-xs-12 col-sm-12 col-md-3 col-md-3 no-padding">Event Type</div>
 			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 no-padding">
 				
 				<input  ng-model="eventCtrl.event.type" class="col-xs-12" list="type" name="type"  placeholder="Event Type" required >
-				<datalist id="event-type">
+				<datalist id="type">
 					<option value="Birthday Event">
 					<option value="Sports Event">
 					<option value="Academic Event">
