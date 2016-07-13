@@ -58,7 +58,7 @@ angular.module("EventPlanner")
 					var guest_arr = guests.split(",");
 					var guest = [];
 					//console.log(guest_arr);
-					guest_arr.forEach(function(guestss){
+					guest_arr.forEach(function(guestss)
 						guest.push(guestss.trim());
 					});
 				}
